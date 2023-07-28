@@ -1,0 +1,99 @@
+:root{    
+    --contenedor:  white;
+    --separador:   white;
+}
+
+
+    html, body, *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contenedor{
+        display: grid;
+        width: 100vw;
+	    height: 100vh;        
+        grid-template-columns: 55% 45%;        
+		grid-template-rows: 0.6fr 2.4fr 2.5fr;
+        gap: 0px;                
+        background-color: var(--contenedor);
+        overflow: hidden;
+    }
+
+    .titulo{
+        grid-area: 1 / 1 / 2 / 2;         
+        border: 0px solid var(--separador);						
+    }
+
+    .contenedor-titulo{                
+        display: flex;        
+        justify-content: left;
+        align-items: center;
+        padding-left: 25px;
+        padding-top: 15px;        
+    }
+
+    .img-titulo{
+        height: 5rem;         
+    }    
+    
+    .logo{
+        grid-area: 1 / 2 / 2 / 3;         
+        border: 0px solid var(--separador);						
+    }
+
+    .contenedor-logo{                
+        display: flex;        
+        justify-content: end;
+        align-items: center;        
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+
+    .img-logo{
+        height: 8rem;
+    }    
+
+    .grafica{
+        grid-area: 2 / 1 / 4 / 2;         
+        border: 25px solid var(--separador);		
+        	        
+    }
+
+    .img-grafica{
+        width: 0;
+	    height: 0;
+	    min-height: 100%;
+	    min-width: 100%;	    
+		object-fit: contain;	
+    }
+
+    .informacion{
+		grid-area: 2 / 2 / 3 / 3;         
+        border: 25px solid var(--separador);						
+    }
+
+    .img-informacion{
+        width: 0;
+	    height: 0;
+	    min-height: 100%;
+	    min-width: 100%;	    
+		object-fit: contain;	        
+    }
+
+    .carrusel{
+		grid-area: 3 / 2 / 4 / 3;         
+        border: 25px solid var(--separador);	
+        display: flex;        
+        justify-content: center;
+        align-items: center;					
+    }
+
+    .img-carrusel{
+        width: 0;
+	    height: 0%;
+	    min-height: 35vh;
+	    min-width: 35vw;	     
+		object-fit: contain;
+    }   
